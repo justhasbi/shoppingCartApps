@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div id="modals">
+      <form id="addlist_form">
+        <h3>Add Shopping List</h3>
+
+        <div class="form_group">
+          <label for="item">Item Name</label>
+          <input type="text" id="item" required autocomplete="off" />
+        </div>
+
+        <div class="form_group">
+          <label for="price">Price</label>
+          <input type="number" id="price" required autocomplete="off" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="modal_overlay"></div>
+    </div>
+
+    <main class="container">
+      <h1 class="dashboard_title">Shopping Cart Apps</h1>
+      <div class="subtitle">
+        <h3 id="date_now"></h3>
+        <h3>Rp. <span id="total"></span></h3>
+      </div>
+
+      <div id="root">
+        <!-- Rendered by JS -->
+      </div>
+      <button class="floating_button" id="floating_button">+</button>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

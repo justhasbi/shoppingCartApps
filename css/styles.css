@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: inherit;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.splash {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.splash h3 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.btn_splash {
+  height: 40px;
+  width: 250px;
+  background-color: rgb(74, 74, 196);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn_splash:hover {
+  background-color: rgb(121, 121, 236);
+  transition: 300ms;
+}
+
+/* Dashboard css */
+.floating_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(121, 121, 236);
+  color: white;
+  border: 0;
+  outline: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  transition-duration: 500ms;
+}
+
+/* modals */
+
+#modals {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  /* flex */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+#addlist_form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.11);
+}
+
+#addlist_form h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_group label {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form_group input {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.form_group input:focus {
+  outline: 1px solid rgb(74, 74, 196);
+}
+
+#addlist_form button {
+  height: 40px;
+  width: 40%;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  background-color: rgb(74, 74, 196);
+  color: white;
+  margin-left: auto;
+}
+
+#modal_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.178);
+  z-index: -1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.158);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.card small {
+  text-align: center;
+  font-weight: 300;
+}
+
+.card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+  height: 40px;
+  align-items: center;
+}
+
+.card button {
+  height: 30px;
+  width: 40%;
+  background-color: rgb(74, 74, 196);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-left: auto;
+  color: white;
+}
+
+.dashboard_title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#date_now,
+.subtitle h3 {
+  font-size: 12;
+  font-weight: 300;
+}
